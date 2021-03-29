@@ -3,7 +3,7 @@ function handleRequest(request) {
 
   if (pathname.startsWith("/html")) {
     const html = `<html>
-      <p><b>Message:</b> Hello from Deno Deploy.</p>
+      <body><p><marquee><b>Message:</b> Hello from Deno Deploy.<marquee></p></body>
       </html>`;
 
     return new Response(html, {
@@ -36,6 +36,8 @@ function handleRequest(request) {
       align="center"
       style="font-family: Avenir, Helvetica, Arial, sans-serif; font-size: 1.5rem;"
     >
+      <h1>Hello Deno deploy</h1>
+      <p>tkdn</p>
       <p>
         Visit <a href="/json">/json</a> for JSON response and
         <a href="/html">/html</a> for HTML response
